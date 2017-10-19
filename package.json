@@ -1,0 +1,71 @@
+{
+  "name": "linted-git-commit",
+  "version": "0.0.1",
+  "description": "Lint commit message using commitlint, commit if message is valid, show useful info about your config on -h flag",
+  "author": "BjornMelgaard",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BjornMelgaard/linted-git-commit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BjornMelgaard/linted-git-commit/issues"
+  },
+  "bin": {
+    "linted-git-commit": "./dist/index.js"
+  },
+  "scripts": {
+    "lint": "yarn run lint:base '{src,test}/**/*.ts'",
+    "lint:base": "tslint --type-check -c tslint.json -p tsconfig.json",
+    "format": "yarn run format:base '{src,test}/**/*.ts'",
+    "format:base": "prettier --config './.prettierrc.yaml' --ignore-path './.prettierignore' --write",
+    "test": "jest",
+    "prepublishOnly": "yarn run build"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "yarn run format:base",
+      "yarn run lint:base",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "commitlint",
+    "git",
+    "commit",
+    "lint"
+  ],
+  "dependencies": {
+    "@commitlint/core": "^4.2.1",
+    "execa": "^0.8.0",
+    "ramda": "^0.25.0",
+    "ramda-adjunct": "^1.18.0",
+    "ramda-asserters": "^0.0.12",
+    "ramda-universal-trace": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/execa": "^0.7.1",
+    "@types/jest": "^21.1.2",
+    "@types/ramda": "https://github.com/types/npm-ramda#dist",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-ramda": "^1.4.3",
+    "babel-preset-env": "^1.6.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-typescript": "^3.2.2",
+    "husky": "^0.14.3",
+    "jest": "^21.2.1",
+    "lint-staged": "^4.2.3",
+    "prettier": "^1.7.4",
+    "ts-jest": "^21.1.2",
+    "tslint": "^5.7.0",
+    "tslint-config-prettier": "^1.5.0",
+    "tslint-config-standard": "^6.0.1",
+    "tslint-consistent-codestyle": "^1.8.0",
+    "typescript": "^2.5.3"
+  }
+}
