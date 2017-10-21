@@ -5,10 +5,6 @@ const ts = require('gulp-typescript')
 const babel = require('gulp-babel')
 const del = require('del')
 
-function onBuildError() {
-  this.once('finish', () => process.exit(1))
-}
-
 const paths = {
   src: 'src/**/*.ts',
   dist: 'dist',
@@ -26,7 +22,6 @@ gulp.task('build', ['clean'], () =>
     .pipe(tsProject())
     .pipe(babel())
     .pipe(gulp.dest(paths.dist))
-    .once('error', onBuildError)
 )
 
 gulp.task('watch', ['build'], () =>

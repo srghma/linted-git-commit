@@ -12,7 +12,7 @@
     "url": "https://github.com/BjornMelgaard/linted-git-commit/issues"
   },
   "bin": {
-    "linted-git-commit": "./dist/index.js"
+    "linted-git-commit": "./dist/cli.js"
   },
   "scripts": {
     "lint": "yarn run lint:base '{src,test}/**/*.ts'",
