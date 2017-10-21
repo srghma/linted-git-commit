@@ -11,7 +11,7 @@ export const getMessage = (args: string[]) => {
   if (messagePointerIndex === -1) {
     return null
   } else {
-    const messageIndex = (messagePointerIndex as number) + 1
+    const messageIndex = messagePointerIndex + 1
     const message = args[messageIndex]
     return message
   }

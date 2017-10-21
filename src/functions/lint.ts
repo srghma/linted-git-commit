@@ -1,10 +1,14 @@
 import execa from 'execa'
 
-export async function lint(message: string) {
-  const options = {
-    // preserve colors
-    stdio: 'inherit',
-  }
-  return execa('')
+export function lint(message: string): Promise<boolean> {
+  return execa
+    .shell(`echo "${message}" | commitlint`)
+    .then(res => {
+      console.log(res)
+      return true
+    })
+    .catch(res => {
+      console.error(res)
+      return Promise.resolve(false)
+    })
 }
-
