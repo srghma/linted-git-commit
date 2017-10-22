@@ -6,6 +6,11 @@
     "lib": ["es5", "es6", "dom"],
     "allowSyntheticDefaultImports": true,
 
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./src/*"],
+    },
+
     /* Additional Checks */
     "noUnusedLocals": true /* Report errors on unused locals. */,
     "noUnusedParameters": true /* Report errors on unused parameters. */,

@@ -16,10 +16,11 @@
   },
   "scripts": {
     "lint": "yarn run lint:base '{src,test}/**/*.ts'",
-    "lint:base": "tslint --type-check -c tslint.json -p tsconfig.json",
+    "lint:base": "tslint -c tslint.json -p tsconfig.json",
     "format": "yarn run format:base '{src,test}/**/*.ts'",
     "format:base": "prettier --config './.prettierrc.yaml' --ignore-path './.prettierignore' --write",
     "test": "jest",
+    "tttest": "node ./dist/cli.js",
     "prepublishOnly": "yarn run build"
   },
   "engines": {
@@ -40,18 +41,24 @@
   ],
   "dependencies": {
     "@commitlint/core": "^4.2.1",
+    "chalk": "^2.2.0",
+    "dedent": "^0.7.0",
     "execa": "^0.8.0",
     "ramda": "^0.25.0",
     "ramda-adjunct": "^1.18.0",
     "ramda-asserters": "^0.0.12",
-    "ramda-universal-trace": "^0.0.3"
+    "ramda-universal-trace": "^0.0.3",
+    "tty-table": "^2.5.5"
   },
   "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/dedent": "^0.7.0",
     "@types/execa": "^0.7.1",
     "@types/jest": "^21.1.2",
     "@types/ramda": "https://github.com/types/npm-ramda#dist",
     "babel-plugin-lodash": "^3.2.11",
     "babel-plugin-ramda": "^1.4.3",
+    "babel-plugin-root-import": "^5.1.0",
     "babel-preset-env": "^1.6.1",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
@@ -66,6 +73,6 @@
     "tslint-config-prettier": "^1.5.0",
     "tslint-config-standard": "^6.0.1",
     "tslint-consistent-codestyle": "^1.8.0",
-    "typescript": "^2.5.3"
+    "typescript": "^2.7.0-dev.20171021"
   }
 }
