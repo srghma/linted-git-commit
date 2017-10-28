@@ -45,7 +45,7 @@
     "dedent": "^0.7.0",
     "execa": "^0.8.0",
     "ramda": "^0.25.0",
-    "ramda-adjunct": "^1.18.0",
+    "ramda-adjunct": "https://github.com/char0n/ramda-adjunct#master",
     "ramda-asserters": "^0.0.12",
     "ramda-universal-trace": "^0.0.3",
     "tty-table": "^2.5.5"

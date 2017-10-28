@@ -10,6 +10,7 @@ const pad = (arr: string[]) => {
   const maxLength = R.apply(Math.max, lengths)
   console.log(arr, lengths)
   console.log(maxLength)
+  return arr
 }
 
 export default function stringifyInfo(info: object) {
