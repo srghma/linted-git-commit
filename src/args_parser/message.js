@@ -3,19 +3,17 @@ import { validIndex, omitIndexes } from '../utils'
 
 const getPointerIndex = R.findIndex(R.equals('-m'))
 
-export const getMessage = (args: string[]) => {
+export const getMessage = args => {
   const pointerIndex = getPointerIndex(args)
 
-  return validIndex(pointerIndex) ?
-    args[pointerIndex + 1] :
-    null
+  return validIndex(pointerIndex) ? args[pointerIndex + 1] : null
 }
 
 // reject message and its pointer
-export const rejectMessage = (args: string[]) => {
+export const rejectMessage = args => {
   const pointerIndex = getPointerIndex(args)
 
-  if(!validIndex(pointerIndex)) return args
+  if (!validIndex(pointerIndex)) return args
 
   const messageIndex = pointerIndex + 1
   return omitIndexes([pointerIndex, messageIndex], args)

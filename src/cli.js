@@ -1,22 +1,18 @@
 #!/usr/bin/env node
 
 import { commit } from './functions/commit'
-import { hint } from './functions/hint'
 import { help } from './functions/help'
 import { lint } from './functions/lint'
 
 import { showHelp, getMessage, getGitArgs } from './args_parser'
-
-import { error } from './colors'
-
 ;(async () => {
   const args = process.argv.slice(2)
 
-  if (showHelp(args)) return hint()
+  if (showHelp(args)) return help()
   const message = getMessage(args)
 
   if (!message) {
-    console.log(`${error('Error')}: empty message`)
+    console.log('> Error: empty message')
     return help()
   }
 

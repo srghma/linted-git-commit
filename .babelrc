@@ -10,9 +10,5 @@
     ["root-import", {
       "rootPathSuffix": "./src"
     }],
-    ["ramda"],
-    ["lodash", {
-      "id": ["ramda-adjunct"]
-    }]
   ]
 }

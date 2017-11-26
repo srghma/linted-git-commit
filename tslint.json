@@ -19,7 +19,7 @@
         }
       }
     ],
-    "quotemark": { "options": [ "single" ] },
+    "quotemark": { "options": ["single"] },
     "typedef-whitespace": [
       true,
       {

@@ -1,7 +1,7 @@
 import { getGitArgs } from './get_git_args'
 
 describe('get_git_args', () => {
-  ;['-h', '--help'].forEach(opt => {
+  ['-h', '--help'].forEach(opt => {
     it(`rejects ${opt}`, () => {
       const args = ['--amend', opt, '-n']
       const expected = ['--amend', '-n']
