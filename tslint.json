@@ -1,7 +1,7 @@
 {
   "defaultSeverity": "error",
   "extends": [
-    // "tslint:recommended",
+    "tslint:recommended",
     "tslint-config-standard",
     "tslint-consistent-codestyle",
     "tslint-config-prettier"
@@ -19,6 +19,7 @@
         }
       }
     ],
+    "quotemark": { "options": [ "single" ] },
     "typedef-whitespace": [
       true,
       {
@@ -29,6 +30,15 @@
         "variable-declaration": "nospace"
       }
     ],
+    "no-console": false,
+    "ordered-imports": {
+      "options": {
+        "import-sources-order": "any",
+        "named-imports-order": "any",
+        "module-source-path": "full",
+        "grouped-imports": true
+      }
+    },
 
     // more typesafety
     // "typedef": [
