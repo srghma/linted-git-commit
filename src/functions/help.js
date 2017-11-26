@@ -22,9 +22,9 @@ async function showHelp(text) {
 }
 
 async function showError() {
-  const errorText = '> Error: Please add `help` entry to your commitlintrc'
+  const errorText = '> Error: Please add `help` to your commitlintrc'
 
-  console.log(errorText)
+  console.log(marked(errorText))
 }
 
 async function getHelpText() {

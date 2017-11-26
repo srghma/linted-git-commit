@@ -23,7 +23,6 @@
     "format-fix": "yarn run format && yarn run lint:fix",
     "precommit": "lint-staged",
     "test": "jest",
-    "tttest": "node ./dist/cli.js",
     "build": "gulp build",
     "build:watch": "gulp watch",
     "prepublishOnly": "yarn run build"
@@ -47,16 +46,16 @@
   "dependencies": {
     "@commitlint/core": "^4.2.1",
     "chalk": "^2.2.0",
+    "cosmiconfig": "^3.1.0",
     "dedent": "^0.7.0",
     "execa": "^0.8.0",
     "marked": "^0.3.6",
     "marked-terminal": "^2.0.0",
     "ramda": "^0.25.0",
-    "ramda-adjunct": "https://github.com/char0n/ramda-adjunct#master",
-    "ramda-asserters": "^0.0.12",
-    "ramda-universal-trace": "^0.0.3"
+    "ramda-adjunct": "^2.0.0"
   },
   "devDependencies": {
+    "babel-jest": "^21.2.0",
     "babel-plugin-root-import": "^5.1.0",
     "babel-preset-env": "^1.6.1",
     "del": "^3.0.0",

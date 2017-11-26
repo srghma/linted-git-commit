@@ -1096,7 +1096,7 @@ cosmiconfig@^1.1.0:
     pinkie-promise "^2.0.0"
     require-from-string "^1.1.0"
 
-cosmiconfig@^3.0.1:
+cosmiconfig@^3.0.1, cosmiconfig@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-3.1.0.tgz#640a94bf9847f321800403cd273af60665c73397"
   dependencies:
@@ -3795,17 +3795,9 @@ qs@~6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/qs/-/qs-6.5.1.tgz#349cdf6eef89ec45c12d7d5eb3fc0c870343a6d8"
 
-"ramda-adjunct@https://github.com/char0n/ramda-adjunct#master":
-  version "1.19.0"
-  resolved "https://github.com/char0n/ramda-adjunct#04218906dbeedc3a89270b22d02c29f67a27d9b6"
-
-ramda-asserters@^0.0.12:
-  version "0.0.12"
-  resolved "https://registry.yarnpkg.com/ramda-asserters/-/ramda-asserters-0.0.12.tgz#1b324a46f0eaace522c74bd1acafb8af5c930c05"
-
-ramda-universal-trace@^0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/ramda-universal-trace/-/ramda-universal-trace-0.0.3.tgz#4ecc730351694e79bb73d1937c0d97197b5b77a8"
+ramda-adjunct@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/ramda-adjunct/-/ramda-adjunct-2.0.0.tgz#0f9ba80b7fe4c464074490490b575a213a91d7b9"
 
 ramda@^0.25.0:
   version "0.25.0"
