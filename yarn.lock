@@ -2,17 +2,6 @@
 # yarn lockfile v1
 
 
-"@commitlint/cli@^4.2.1":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/cli/-/cli-4.3.0.tgz#b0d45fb712a5b9c0daa48b07594b68c384fd4dc7"
-  dependencies:
-    "@commitlint/core" "^4.3.0"
-    babel-polyfill "^6.23.0"
-    chalk "^2.0.1"
-    get-stdin "^5.0.1"
-    lodash "^4.17.4"
-    meow "^3.7.0"
-
 "@commitlint/core@^4.2.1":
   version "4.2.2"
   resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-4.2.2.tgz#24f37b5afdeca993173f1696724570015148c1f8"
@@ -31,35 +20,6 @@
     pos "^0.4.2"
     resolve-from "^3.0.0"
     semver "^5.3.0"
-
-"@commitlint/core@^4.3.0":
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/core/-/core-4.3.0.tgz#e881a0a16594af3ade09be4d12b770b9913bc261"
-  dependencies:
-    "@marionebl/conventional-commits-parser" "^3.0.0"
-    "@marionebl/git-raw-commits" "^1.2.0"
-    "@marionebl/sander" "^0.6.0"
-    babel-runtime "^6.23.0"
-    chalk "^2.0.1"
-    conventional-changelog-angular "^1.3.3"
-    cosmiconfig "^3.0.1"
-    find-up "^2.1.0"
-    lodash "^4.17.4"
-    path-exists "^3.0.0"
-    resolve-from "^3.0.0"
-    semver "^5.3.0"
-
-"@marionebl/conventional-commits-parser@^3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@marionebl/conventional-commits-parser/-/conventional-commits-parser-3.0.0.tgz#9da29b4d2c8f05c0f9cdd02936713b8096c958d3"
-  dependencies:
-    JSONStream "^1.0.4"
-    is-text-path "^1.0.0"
-    lodash "^4.2.1"
-    meow "^3.3.0"
-    split2 "^2.0.0"
-    through2 "^2.0.0"
-    trim-off-newlines "^1.0.0"
 
 "@marionebl/git-raw-commits@^1.2.0":
   version "1.2.0"
@@ -718,14 +678,6 @@ babel-plugin-transform-strict-mode@^6.24.1:
   dependencies:
     babel-runtime "^6.22.0"
     babel-types "^6.24.1"
-
-babel-polyfill@^6.23.0:
-  version "6.26.0"
-  resolved "https://registry.yarnpkg.com/babel-polyfill/-/babel-polyfill-6.26.0.tgz#379937abc67d7895970adc621f284cd966cf2153"
-  dependencies:
-    babel-runtime "^6.26.0"
-    core-js "^2.5.0"
-    regenerator-runtime "^0.10.5"
 
 babel-preset-env@^1.6.1:
   version "1.6.1"
@@ -1905,10 +1857,6 @@ get-own-enumerable-property-symbols@^2.0.1:
 get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
-
-get-stdin@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-5.0.1.tgz#122e161591e21ff4c52530305693f20e6393a398"
 
 get-stream@^3.0.0:
   version "3.0.0"
@@ -3293,7 +3241,7 @@ mem@^1.1.0:
   dependencies:
     mimic-fn "^1.0.0"
 
-meow@^3.3.0, meow@^3.7.0:
+meow@^3.3.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/meow/-/meow-3.7.0.tgz#72cb668b425228290abbfa856892587308a801fb"
   dependencies:
@@ -3969,10 +3917,6 @@ redeyed@~1.0.0:
 regenerate@^1.2.1:
   version "1.3.3"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.3.3.tgz#0c336d3980553d755c39b586ae3b20aa49c82b7f"
-
-regenerator-runtime@^0.10.5:
-  version "0.10.5"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.10.5.tgz#336c3efc1220adcedda2c9fab67b5a7955a33658"
 
 regenerator-runtime@^0.11.0:
   version "0.11.0"

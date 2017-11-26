@@ -9,9 +9,6 @@ module.exports = {
     'jest/globals': true,
   },
   plugins: ['standard', 'promise', 'react', 'jest'],
-  globals: {
-    localStorage: true,
-  },
   rules: {
     'space-before-function-paren': ['error', 'never'],
     'comma-dangle': ['error', 'always-multiline'],
