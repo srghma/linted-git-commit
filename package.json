@@ -1,6 +1,6 @@
 {
   "name": "linted-git-commit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Lint commit message using commitlint, commit if message is valid, show useful info about your config on -h flag",
   "author": "BjornMelgaard",
   "license": "MIT",

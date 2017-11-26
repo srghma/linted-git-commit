@@ -19,8 +19,6 @@ import { showHelp, getMessage, getGitArgs } from './args_parser'
   const lintRes = await lint(message)
   if (!lintRes) process.exit(1)
 
-  console.log(args)
   const gitArgs = getGitArgs(args)
-  console.log(gitArgs)
   commit(message, gitArgs)
 })().catch(console.error)
