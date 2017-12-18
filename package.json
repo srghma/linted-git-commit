@@ -55,7 +55,7 @@
     "ramda-adjunct": "^2.0.0"
   },
   "devDependencies": {
-    "babel-jest": "^21.2.0",
+    "babel-jest": "^22.0.0",
     "babel-plugin-root-import": "^5.1.0",
     "babel-preset-env": "^1.6.1",
     "del": "^3.0.0",
