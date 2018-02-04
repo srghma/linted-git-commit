@@ -28,7 +28,7 @@
     "prepublishOnly": "yarn run build"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=8"
   },
   "lint-staged": {
     "*.js": [
