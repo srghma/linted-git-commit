@@ -16,24 +16,24 @@
   },
   "scripts": {
     "lint:base": "eslint --ignore-path .gitignore",
-    "lint": "yarn run lint:base .",
-    "lint:fix": "yarn run lint:base --fix .",
+    "lint": "npm run lint:base .",
+    "lint:fix": "npm run lint:base --fix .",
     "format:base": "prettier --config './.prettierrc.yaml' --ignore-path './.gitignore' --write",
-    "format": "yarn run format:base './**/*.{js,jsx,json}'",
-    "format-fix": "yarn run format && yarn run lint:fix",
+    "format": "npm run format:base './**/*.{js,jsx,json}'",
+    "format-fix": "npm run format && npm run lint:fix",
     "precommit": "lint-staged",
     "test": "jest",
     "build": "gulp build",
     "build:watch": "gulp watch",
-    "prepublishOnly": "yarn run build"
+    "prepublishOnly": "npm run build"
   },
   "engines": {
     "node": ">=8"
   },
   "lint-staged": {
     "*.js": [
-      "yarn run format:base",
-      "yarn run lint:base --fix",
+      "npm run format:base",
+      "npm run lint:base --fix",
       "git add"
     ]
   },
@@ -44,32 +44,32 @@
     "lint"
   ],
   "dependencies": {
-    "@commitlint/core": "^5.2.0",
-    "chalk": "^2.2.0",
-    "cosmiconfig": "^3.1.0",
+    "@commitlint/core": "^6.2.0",
+    "chalk": "^2.4.1",
+    "cosmiconfig": "^5.0.3",
     "dedent": "^0.7.0",
-    "execa": "^0.8.0",
-    "marked": "^0.3.6",
+    "execa": "^0.10.0",
+    "marked": "^0.3.19",
     "marked-terminal": "^2.0.0",
     "ramda": "^0.25.0",
-    "ramda-adjunct": "^2.0.0"
+    "ramda-adjunct": "^2.8.0"
   },
   "devDependencies": {
-    "babel-jest": "^21.2.0",
+    "babel-jest": "^22.4.4",
     "babel-plugin-root-import": "^5.1.0",
-    "babel-preset-env": "^1.6.1",
+    "babel-preset-env": "^1.7.0",
     "del": "^3.0.0",
-    "eslint": "3.12.2",
-    "eslint-config-standard": "6.2.1",
-    "eslint-plugin-jest": "^21.3.2",
-    "eslint-plugin-promise": "3.4.0",
-    "eslint-plugin-react": "^7.5.1",
-    "eslint-plugin-standard": "2.0.1",
+    "eslint": "4.19.1",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-react": "^7.8.2",
+    "eslint-plugin-standard": "3.1.0",
     "gulp": "^3.9.1",
-    "gulp-babel": "^7.0.0",
+    "gulp-babel": "^7.0.1",
     "husky": "^0.14.3",
-    "jest": "^22.0.0",
-    "lint-staged": "^6.0.0",
-    "prettier": "^1.7.4"
+    "jest": "^22.4.4",
+    "lint-staged": "^7.1.1",
+    "prettier": "^1.12.1"
   }
 }
