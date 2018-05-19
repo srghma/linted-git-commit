@@ -5,7 +5,8 @@ import { help } from './functions/help'
 import { lint } from './functions/lint'
 
 import { showHelp, getMessage, getGitArgs } from './args_parser'
-;(async () => {
+
+async function run() {
   const args = process.argv.slice(2)
 
   if (showHelp(args)) return help()
@@ -21,4 +22,6 @@ import { showHelp, getMessage, getGitArgs } from './args_parser'
 
   const gitArgs = getGitArgs(args)
   commit(message, gitArgs)
-})().catch(console.error)
+}
+
+run().catch(console.error)

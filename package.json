@@ -1,7 +1,8 @@
 {
   "name": "linted-git-commit",
   "version": "0.0.2",
-  "description": "Lint commit message using commitlint, commit if message is valid, show useful info about your config on -h flag",
+  "description":
+    "Lint commit message using commitlint, commit if message is valid, show useful info about your config on -h flag",
   "author": "srghma",
   "license": "Apache Public License v2",
   "repository": {
@@ -15,12 +16,8 @@
     "linted-git-commit": "./dist/cli.js"
   },
   "scripts": {
-    "lint:base": "eslint --ignore-path .gitignore",
-    "lint": "npm run lint:base .",
-    "lint:fix": "npm run lint:base --fix .",
-    "format:base": "prettier --config './.prettierrc.yaml' --ignore-path './.gitignore' --write",
-    "format": "npm run format:base './**/*.{js,jsx,json}'",
-    "format-fix": "npm run format && npm run lint:fix",
+    "lint": "eslint --ignore-path .gitignore .",
+    "format": "prettier-eslint --write './**/*.{js,jsx,json}'",
     "precommit": "lint-staged",
     "test": "jest",
     "build": "gulp build",
@@ -31,18 +28,9 @@
     "node": ">=8"
   },
   "lint-staged": {
-    "*.js": [
-      "npm run format:base",
-      "npm run lint:base --fix",
-      "git add"
-    ]
+    "*.js": ["prettier-eslint --write", "git add"]
   },
-  "keywords": [
-    "commitlint",
-    "git",
-    "commit",
-    "lint"
-  ],
+  "keywords": ["commitlint", "git", "commit", "lint"],
   "dependencies": {
     "@commitlint/core": "^6.2.0",
     "chalk": "^2.4.1",
@@ -61,7 +49,9 @@
     "del": "^3.0.0",
     "eslint": "4.19.1",
     "eslint-config-standard": "11.0.0",
+    "eslint-plugin-import": "^2.12.0",
     "eslint-plugin-jest": "^21.15.1",
+    "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "3.7.0",
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-standard": "3.1.0",
@@ -70,6 +60,7 @@
     "husky": "^0.14.3",
     "jest": "^22.4.4",
     "lint-staged": "^7.1.1",
-    "prettier": "^1.12.1"
+    "prettier": "^1.12.1",
+    "prettier-eslint-cli": "^4.7.1"
   }
 }
