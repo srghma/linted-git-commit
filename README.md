@@ -1,5 +1,5 @@
-[![Greenkeeper badge](https://badges.greenkeeper.io/BjornMelgaard/linted-git-commit.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/BjornMelgaard/linted-git-commit.svg?branch=master)](https://travis-ci.org/BjornMelgaard/linted-git-commit)
+[![Greenkeeper badge](https://badges.greenkeeper.io/srghma/linted-git-commit.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/srghma/linted-git-commit.svg?branch=master)](https://travis-ci.org/srghma/linted-git-commit)
 
 # linted-git-commit
 Lints commit message using [commitlint](https://github.com/marionebl/commitlint), commits if message is valid.

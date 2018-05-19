@@ -2,14 +2,14 @@
   "name": "linted-git-commit",
   "version": "0.0.2",
   "description": "Lint commit message using commitlint, commit if message is valid, show useful info about your config on -h flag",
-  "author": "BjornMelgaard",
-  "license": "MIT",
+  "author": "srghma",
+  "license": "Apache Public License v2",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BjornMelgaard/linted-git-commit.git"
+    "url": "git+https://github.com/srghma/linted-git-commit.git"
   },
   "bugs": {
-    "url": "https://github.com/BjornMelgaard/linted-git-commit/issues"
+    "url": "https://github.com/srghma/linted-git-commit/issues"
   },
   "bin": {
     "linted-git-commit": "./dist/cli.js"
