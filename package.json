@@ -39,7 +39,7 @@
     "execa": "^0.10.0",
     "marked": "^0.3.19",
     "marked-terminal": "^2.0.0",
-    "ramda": "^0.25.0",
+    "ramda": "^0.26.1",
     "ramda-adjunct": "^2.8.0"
   },
   "devDependencies": {
