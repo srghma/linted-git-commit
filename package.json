@@ -61,6 +61,6 @@
     "jest": "^22.4.4",
     "lint-staged": "^7.1.1",
     "prettier": "^1.12.1",
-    "prettier-eslint-cli": "^4.7.1"
+    "prettier-eslint-cli": "^5.0.0"
   }
 }
