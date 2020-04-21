@@ -37,7 +37,7 @@
     "cosmiconfig": "^5.0.3",
     "dedent": "^0.7.0",
     "execa": "^0.10.0",
-    "marked": "^0.3.19",
+    "marked": "^1.0.0",
     "marked-terminal": "^2.0.0",
     "ramda": "^0.25.0",
     "ramda-adjunct": "^2.8.0"
